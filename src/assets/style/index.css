@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
+    font-family: "Nunito Sans", sans-serif;
+    outline: none;
+}
+
+@layer components {
+    .custom_transition {
+        @apply transition-all
+    }
+
+    .aside__section {
+        @apply bg-primary rounded-2xl shrink-0 py-3 flex flex-col justify-between z-50 h-full fixed top-0 left-2 stander:sticky stander:top-0 stander:h-screen
+    }
+
+    .custom_shadow {
+        @apply shadow-lg
+    }
+
+    .filter-bg {
+        @apply shadow-CardShadow bg-white px-5 mt-[15px] py-3 rounded-[15px]
+    }
+
+    .table_td_th {
+        @apply py-2.5
+    }
+
+    .app-table-bg {
+        @apply mt-[15px] shadow-CardShadow py-5 px-3 bg-white rounded-[15px]
+    }
+
+    .top-header {
+        @apply shadow-CardShadow bg-white rounded-2xl px-5 py-2.5 flex justify-between items-center
+    }
+
+    .bell-dot {
+        @apply bg-primary border-2 border-white absolute justify-center items-center h-3 rounded-full w-3 -top-0.5 -right-[1px]
+    }
+
+    .header-bell {
+        @apply relative bg-bgColor border h-[42px] w-[42px] flex-center rounded-full
+    }
+
+    .flex-center {
+        @apply flex items-center justify-center
+    }
+
+    .flex-between {
+        @apply flex items-center justify-between
+    }
+
+
+}
+
+.header-shadow {
+    box-shadow: 4px 8px 16px #00000013;
+}
+
+.app-text-color {
+    color: #646464;
+}
+
+
+.switch_btn {
+    display: block;
+}
+
+.switch_btn .switch_cricle {
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    background-color: #E6F5FF;
+    border-radius: 50px;
+    display: block;
+    transform: translateX(23px);
+    height: 16px;
+    width: 16px;
+}
+
+.switch_btn .switch_base {
+    border: 1px solid #004D99;
+    background-color: #004D99;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    align-items: center;
+    border-radius: 50px;
+    padding: 0px;
+    cursor: pointer;
+    display: flex;
+    /* height: 16px;
+    width: 32px; */
+}
+
+.switch_btn input:checked+.switch_base {
+    background-color: #fff;
+    border: 1px solid #004D99;
+}
+
+.rdt_TableCol_Sortable span {
+    display: none
+}
+
+.switch_btn input:checked+.switch_base .switch_cricle {
+    transform: translateX(2px);
+    background-color: #004D99;
+}
