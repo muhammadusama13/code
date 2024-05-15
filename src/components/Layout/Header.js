@@ -31,7 +31,7 @@ const Header = () => {
 
   return (
     <>
-      <header className='top-header  header-shadow '>
+      <header className='top-header  header-shadow ml-14 stander:ml-0'>
         <div className=''>
           <img src={AppLogo} alt='' />
         </div>
