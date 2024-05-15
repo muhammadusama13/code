@@ -10,7 +10,7 @@ import DownloadIcon from '../svg/DownloadIcon'
 
 const Aside = () => {
     const routes = useLocation()
-    const [showmenu, setShowmenu] = useState(false)
+    const [showmenu, setShowmenu] = useState(true)
     const menu_list = [
         {
             name: 'Dashboard',
